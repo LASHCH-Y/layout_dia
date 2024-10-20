@@ -63,6 +63,17 @@
     opacity: 70%;
   }
 
+  &__input:-webkit-autofill,
+  &__input:-internal-autofill-selected {
+    -webkit-text-fill-color: #fff;
+    background-color: $header-and-footer-background !important;
+  }
+
+  &__input:autofill {
+    -webkit-text-fill-color: #fff;
+    background-color: $header-and-footer-background;
+  }
+
   &__button {
     display: inline-block;
     width: 100%;
@@ -76,6 +87,7 @@
     line-height: 56px;
     color: $button-text-color;
     margin-top: 56px;
+    cursor: pointer;
 
     @include hover(transform, scale(1.1));
 

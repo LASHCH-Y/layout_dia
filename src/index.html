@@ -558,6 +558,7 @@
             id="contact-us"
             action="#"
             method="GET"
+            onsubmit="return false;"
           >
             <h4 class="contact-form__title">Send us a message</h4>
             <fieldset class="contact-form__fieldset">
@@ -686,6 +687,16 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      document
+        .getElementById('contact-us')
+        .addEventListener('submit', function (event) {
+          event.preventDefault();
+
+          this.reset();
+        });
+    </script>
 
     <script src="scripts/main.js"></script>
   </body>

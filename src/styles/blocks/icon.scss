@@ -43,6 +43,7 @@
 .socials-icon {
   height: 32px;
   width: 32px;
+  transition: background-image $animation-duration ease-in-out;
 
   @include hover(transform, scale(1.1));
 

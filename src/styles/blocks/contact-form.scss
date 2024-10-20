@@ -63,8 +63,6 @@
     opacity: 70%;
   }
 
-
-
   &__input:-webkit-autofill,
   &__input:-webkit-autofill:hover,
   &__input:-webkit-autofill:focus,
@@ -75,11 +73,10 @@
   &__select:-webkit-autofill:hover,
   &__select:-webkit-autofill:focus {
     border-bottom: 1px solid #144ed4;
-  -webkit-text-fill-color: $footer-text-color;
-  background-color: $header-and-footer-background;
-  transition: background-color 5000s ease-in-out 0s;
-}
-
+    -webkit-text-fill-color: $footer-text-color;
+    background-color: $header-and-footer-background;
+    transition: background-color $animation-duration ease-in-out 0s;
+  }
 
   &__button {
     display: inline-block;

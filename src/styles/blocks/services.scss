@@ -118,9 +118,6 @@
     color: #334563;
 
     @include hover(transform, scale(1.1));
-
-    &:hover {
-      color: $hover-color;
-    }
+    @include hover(color, $hover-color);
   }
 }

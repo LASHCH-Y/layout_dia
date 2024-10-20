@@ -1,0 +1,2 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector(".slider-overlay__button--prev"),t=document.querySelector(".slider-overlay__button--next"),n=document.querySelector(".slider__slides"),r=document.querySelectorAll(".slider__slide").length,l=0;function d(e){l=e>=r?0:e<0?r-1:e,n.style.transform=`translateX(-${100*l}%)`,console.log("Current index:",l)}e.addEventListener("click",()=>{d(l-1)}),t.addEventListener("click",()=>{d(l+1)}),setInterval(()=>{d(l+1)},3e3)});
+//# sourceMappingURL=index.e2b0f175.js.map
